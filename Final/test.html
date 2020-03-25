@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Users/harshgour/Documents/Final/CSS.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5fdd48a981.js" crossorigin="anonymous"></script>
+    <title>T-Shirt & Polos</title>
+  </head>
+  <body id="body">
+    <div id="wrapper">
+      <div class="header">
+        <div class="dashed"></div>
+        <div class="container">
+          <div class="row py-3">
+            <div id="title" class="col-xs-12 col-md-12" style="text-align: center; color:white;">
+              <h2 style="font-family: 'Quicksand', sans-serif;"><a href="HTML.html" class="text-white text-decoration-none">MarketPlace</a></h2>
+            </div>
+          </div>
+        </div>
+        <div class="dashed"></div>
+      </div>
+      <div class="log-nav" id="">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container p-0">
+            <div class="d-flex w-100 align-items-center justify-content-between">
+                <form class="form-inline my-2 my-lg-0">
+                  <input id="search-bar" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-white my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <div class="d-flex align-items-center">
+                <a href="Login.html" class="text-secondary m-1 p-0" style="text-decoration: none;">Login-or-SignUp<span class="sr-only">(current)</span></a>
+                  <div id="cart">
+                  <a  data-toggle="dropdown" data-loading-text="Loading..." class="p-0 ml-2 heading dropdown-toggle">
+                  <i class="fas fa-shopping-cart fa-lg"></i>
+                  </a>
+                  <ul id="cart-menu" class="dropdown-menu">
+                    <li class="li">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td class="text-center"><a href="product.html"><img class="img-thumbnail" title="Xitefun Causal Wear Fancy Shoes" alt="Xitefun Causal Wear Fancy Shoes" src="image/product/sony_vaio_1-50x75.jpg"></a></td>
+                            <td class="text-left"><a href="product.html">Casual Wear Fancy Shoes</a></td>
+                            <td class="text-right">x 1</td>
+                            <td class="text-right"><i class="fas fa-rupee-sign"></i> 902.00</td>
+                            <td class="text-center"><button class="btn btn-danger btn-xs remove" title="Remove" onclick="" type="button"><i class="fa fa-times"></i></button></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><a href="product.html"><img class="img-thumbnail" title="Aspire Ultrabook Laptop" alt="Aspire Ultrabook Laptop" src="image/product/samsung_tab_1-50x75.jpg"></a></td>
+                            <td class="text-left"><a href="product.html">Aspire Ultrabook Laptop</a></td>
+                            <td class="text-right">x 1</td>
+                            <td class="text-right"><i class="fas fa-rupee-sign"></i> 23000.00</td>
+                            <td class="text-center"><button class="btn btn-danger btn-xs remove" title="Remove" onclick="" type="button"><i class="fa fa-times"></i></button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </li>
+                    <li class="d-flex justify-content-center">
+                        <p class="checkout"><a href="cart.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> View Cart</a>&nbsp;&nbsp;&nbsp;<a href="checkout.html" class="btn btn-primary"><i class="fa fa-share"></i> Checkout</a></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+      </div>
+      <div id="main" class="wrapper mx-2 mt-2 bg-white">
+        <div id="Location" class="mt-3 container text-secondary p-0 pt2">
+          <a class="fas fa-home text-secondary" href="HTML.html"></a> >> Mens's Fashion >> T-Shirts & Polos
+        </div>
+        <div class="d-flex">
+          <div class="col-lg-2 pr-1 pl-2">
+            <div class="mt-5">
+              <h6><b>Men's Fashion</b></h6>
+              <hr class="mt-0 mb-2">
+              <div class="" id="category">
+                <ul class="m-0 p-0" id="category-list">
+                  <li><a class="m-0 p-0" href="/Users/harshgour/Documents/Final/test.html">> T-Shirts & Polos</a></li>
+                  <li><a class="m-0 p-0" href="#">> Shirts</a></li>
+                  <li><a class="m-0 p-0" href="#">> Jeans</a></li>
+                  <li><a class="m-0 p-0" href="#">> Innerwear</a></li>
+                </ul>
+                <hr class="mt-2 mb-2">
+              </div>
+              <div class="" id="price-bar">
+                <h6><b>Price</b></h6>
+                <div class="slidecontainer">
+                  <input type="range" min="1" max="2000" value="2000" class="slider" id="myRange">
+                  <div class="mt-1"><b>Price: </b><i class="fas fa-rupee-sign"></i> 0 to <i class="fas fa-rupee-sign"></i> <span id="price"></span></div>
+                </div>
+                <script>
+                  var slider = document.getElementById("myRange");
+                  var output = document.getElementById("price");
+                  output.innerHTML = slider.value;
+
+                  slider.oninput = function() {
+                    output.innerHTML = this.value;
+                  }
+                  </script>
+                  <hr class="mt-2 mb-2">
+              </div>
+              <div class="" id="sort">
+                <h6><b>Sort by:</b></h6>
+                <div class="">
+                  <form class="" action="/submit">
+                    <ul>
+                      <li><input type="radio" name="htol" value="htol"> High to low</li>
+                      <li><input type="radio" name="ltoh" value="ltoh"> Low to High</li>
+                      <li><input type="radio" name="New" value="New"> Newest First</li>
+                      <li><input type="radio" name="pop" value="pop"> Popularity</li>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-10 p-0">
+            <div class="container px-0 py-2">
+              <div class="container " id="Today's Deals">
+                <h5 class="mb-0">Today's Deals</h5>
+                <div class="dashed text-light" style="height: 1px;"></div>
+                <div class="d-flex mt-2">
+                  <div class="col-xs-12 col-lg-3 text-center bg-light p-2">
+                    <img src="/Users/harshgour/Documents/Final/Polo-1.jpg" class="img-fluid" alt="">
+                    <div class="d-flex mt-2 justify-content-center">
+                      <div class="Polo-price" style="">
+                        <i class="fas fa-rupee-sign"></i> 499
+                        </div>
+                        <div class="ml-1 MRP" style="">
+                          <i class="fas fa-rupee-sign"></i> 899
+                        </div>
+                    </div>
+                    Men's Apparel
+                  </div>
+                  <div class="col-xs-12 col-lg-3 text-center bg-light p-2">
+                    <img src="/Users/harshgour/Documents/Final/Polo-2.jpg" class="img-fluid" alt="">
+                    <div class="d-flex mt-2 justify-content-center">
+                      <div class="Polo-price" style="">
+                        <i class="fas fa-rupee-sign"></i> 499
+                        </div>
+                        <div class="ml-1 MRP" style="">
+                          <i class="fas fa-rupee-sign"></i> 899
+                        </div>
+                    </div>
+                    LE BOURGOUIS Round..
+                  </div>
+                  <div class="col-xs-12 col-lg-3 text-center bg-light p-2">
+                    <img src="/Users/harshgour/Documents/Final/Polo-3.jpg" class="img-fluid" alt="">
+                    <div class="d-flex mt-2 justify-content-center">
+                      <div class="Polo-price" style="">
+                        <i class="fas fa-rupee-sign"></i> 499
+                        </div>
+                        <div class="ml-1 MRP" style="">
+                          <i class="fas fa-rupee-sign"></i> 899
+                        </div>
+                    </div>
+                    Dream of Glory Inc. Men's T-Shirts
+                  </div>
+                  <div class="col-xs-12 col-lg-3 text-center bg-light p-2">
+                    <img src="/Users/harshgour/Documents/Final/Polo-4.jpg" class="img-fluid" alt="">
+                    <div class="d-flex mt-2 justify-content-center">
+                      <div class="Polo-price" style="">
+                        <i class="fas fa-rupee-sign"></i> 499
+                        </div>
+                        <div class="ml-1 MRP" style="">
+                          <i class="fas fa-rupee-sign"></i> 899
+                        </div>
+                    </div>
+                    LEWEL's Full Sleeve Hooded T-Shirt
+                  </div>
+                </div>
+              </div>
+              <div class="container mt-3" id="New Releases">
+                <h5 class="mb-0">New Releases</h5>
+                <div class="dashed text-light" style="height: 1px;"></div>
+                <div class="d-flex mt-2">
+                  <div class="col-xs-12 col-lg-3 text-center bg-light p-2">
+                    <a href="/Users/harshgour/Documents/Final/Allen Solly's Men's Polo.html" class="text-dark">
+                      <img src="/Users/harshgour/Documents/Final/Polo-5.jpg" class="img-fluid" alt="">
+                      <div class="d-flex mt-2 justify-content-center">
+                        <div class="Polo-price" style="">
+                          <i class="fas fa-rupee-sign"></i> 499
+                          </div>
+                          <div class="ml-1 MRP" style="">
+                            <i class="fas fa-rupee-sign"></i> 899
+                          </div>
+                      </div>
+                      Allen Solly's Men's Polo
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-lg-3 text-center bg-light p-2">
+                    <img src="/Users/harshgour/Documents/Final/Polo-6.jpg" class="img-fluid" alt="">
+                    <div class="d-flex mt-2 justify-content-center">
+                      <div class="Polo-price" style="">
+                        <i class="fas fa-rupee-sign"></i> 499
+                        </div>
+                        <div class="ml-1 MRP" style="">
+                          <i class="fas fa-rupee-sign"></i> 899
+                        </div>
+                    </div>
+                    LE BOURGOUIS Round..
+                  </div>
+                  <div class="col-xs-12 col-lg-3 text-center bg-light p-2">
+                    <img src="/Users/harshgour/Documents/Final/Polo-7.jpg" class="img-fluid" alt="">
+                    <div class="d-flex mt-2 justify-content-center">
+                      <div class="Polo-price" style="">
+                        <i class="fas fa-rupee-sign"></i> 499
+                        </div>
+                        <div class="ml-1 MRP" style="">
+                          <i class="fas fa-rupee-sign"></i> 899
+                        </div>
+                    </div>
+                    Dream of Glory Inc. Men's T-Shirts
+                  </div>
+                  <div class="col-xs-12 col-lg-3 text-center bg-light p-2">
+                    <img src="/Users/harshgour/Documents/Final/Polo-1.jpg" class="img-fluid" alt="">
+                    <div class="d-flex mt-2 justify-content-center">
+                      <div class="Polo-price" style="">
+                        <i class="fas fa-rupee-sign"></i> 499
+                        </div>
+                        <div class="ml-1 MRP" style="">
+                          <i class="fas fa-rupee-sign"></i> 899
+                        </div>
+                    </div>
+                    Allen Solly's Mens Polo
+                  </div>
+                </div>
+              </div>
+              <div class="container mt-3" id="Top Rated">
+                <h5 class="mb-0">Top Rated</h5>
+                <div class="dashed text-light" style="height: 1px;"></div>
+                <div class="d-flex mt-2">
+                  <div class="col-xs-12 col-lg-3 text-center bg-light p-2">
+                    <img src="/Users/harshgour/Documents/Final/Polo-1.jpg" class="img-fluid" alt="">
+                    <div class="d-flex mt-2 justify-content-center">
+                      <div class="Polo-price" style="">
+                        <i class="fas fa-rupee-sign"></i> 499
+                        </div>
+                        <div class="ml-1 MRP" style="">
+                          <i class="fas fa-rupee-sign"></i> 899
+                        </div>
+                    </div>
+                    Men's Apparel
+                  </div>
+                  <div class="col-xs-12 col-lg-3 text-center bg-light p-2">
+                    <img src="/Users/harshgour/Documents/Final/Polo-2.jpg" class="img-fluid" alt="">
+                    <div class="d-flex mt-2 justify-content-center">
+                      <div class="Polo-price" style="">
+                        <i class="fas fa-rupee-sign"></i> 499
+                        </div>
+                        <div class="ml-1 MRP" style="">
+                          <i class="fas fa-rupee-sign"></i> 899
+                        </div>
+                    </div>
+                    LE BOURGOUIS Round..
+                  </div>
+                  <div class="col-xs-12 col-lg-3 text-center bg-light p-2">
+                    <img src="/Users/harshgour/Documents/Final/Polo-3.jpg" class="img-fluid" alt="">
+                    <div class="d-flex mt-2 justify-content-center">
+                      <div class="Polo-price" style="">
+                        <i class="fas fa-rupee-sign"></i> 499
+                        </div>
+                        <div class="ml-1 MRP" style="">
+                          <i class="fas fa-rupee-sign"></i> 899
+                        </div>
+                    </div>
+                    Dream of Glory Inc. Men's T-Shirts
+                  </div>
+                  <div class="col-xs-12 col-lg-3 text-center bg-light p-2">
+                    <img src="/Users/harshgour/Documents/Final/Polo-1.jpg" class="img-fluid" alt="">
+                    <div class="d-flex mt-2 justify-content-center">
+                      <div class="Polo-price" style="">
+                        <i class="fas fa-rupee-sign"></i> 499
+                        </div>
+                        <div class="ml-1 MRP" style="">
+                          <i class="fas fa-rupee-sign"></i> 899
+                        </div>
+                    </div>
+                    Allen Solly's Mens Polo
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--nav starts-->
+      <div class="foot mt-2">
+        <footer class="">
+          <div class="part-1 mx-2 text-white font-weight-none p-3" style="background: url(/Users/harshgour/Documents/Final/Header_back.png) repeat;">
+            <div id="contact" class="container mx-auto">
+              <ul id="icons" class="d-flex justify-content-center">
+                <li class="px-sm-2">
+                  <a href="https://twitter.com" target="_blank" class="fab fa-twitter fa-lg">
+                  </a>
+                </li>
+                <li class="px-sm-2">
+                  <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-square fa-lg text-light ">
+                  </a>
+                </li>
+                <li class="px-sm-2">
+                  <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin text-light fa-lg">
+                  </a>
+                </li>
+                <li class="px-sm-2">
+                  <a class="far fa-envelope popup fa-lg text-danger" onclick="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="container"><center>All rights reserved by <span href="#">marketPlace.com</span></center>
+            </div>
+            <div class="dashed"></div>
+            <div class="container d-flex mt-2" style="">
+              <div class=" col-lg-3 col-xs-12 px-auto">
+                <h6>INFORMATION</h6>
+                <ul>
+                  <li><a class="p-0 text-white" href="about-us.html">About Us</a></li>
+                  <li><a class="p-0 text-white" href="about-us.html">Delivery Information</a></li>
+                </ul>
+                </div>
+                <div class="col-lg-3 col-xs-12">
+                  <h6>CUSTOMER SERVICE</h6>
+                  <ul>
+                    <li><a class="p-0 text-white" href="contact-us.html">Contact Us</a></li>
+                    <li><a class="p-0 text-white" href="returns.html">Returns</a></li>
+                    <li><a class="p-0 text-white" href="sitemap.html">Site Map</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-xs-12">
+                  <h6>MY ACCOUNT</h6>
+                  <ul>
+                    <li><a class="p-0 text-white" href="#">My Account</a></li>
+                    <li><a class="p-0 text-white" href="#">Wish List</a></li>
+                    <li><a class="p-0 text-white" href="#">Order History</a></li>
+                    <li><a class="p-0 text-white" href="#">Newsletter</a></li>
+                  </ul>
+            </div>
+            <div class="col-lg-3 col-xs-12">
+              <h6>NEWSLETTER</h6>
+              <div class="" style="font-size: 13px;">
+                Signup to recieve latest news and updates.
+                <input type="text" class="mt-2 w-100 px-2" name="" placeholder="Email address" value="">
+              </div>
+              <button type="submit" class="btn btn-default btn-secondary btn-sm mt-2" name="button">SignUp</button>
+            </div>
+            </div>
+            <div class="dashed"></div>
+            <div class="" id="terms">
+              <ul id="footer-nav" class="container-fluid d-flex align-items-end mb-2">
+                <li class="px-sm-2">
+                  <a id="privacy-link" class="text-secondary" href="#">Privacy</a>
+                </li>
+                <li class="px-sm-2">
+                  <a id="terms-link" class="text-secondary" href="#">Terms</a>
+                </li>
+                <li class="dropup px-sm-2">
+                  <a id="help-link" class="text-secondary dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help</a>
+                  <div id="footer-menu" class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Users/harshgour/Documents/Final/JS.js">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

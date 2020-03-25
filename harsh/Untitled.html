@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Users/harshgour/Documents/harsh/STYLE.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5fdd48a981.js" crossorigin="anonymous"></script>
+    <title>MarketPlace</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <nav class="navbar navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left:-100px;">
+                  <a class="dropdown-item" href="#myModal">Login</a>
+                  <div id="myModal" class="modal fade">
+                    <div class="modal-dialog modal-login">
+                  		<div class="modal-content">
+                  			<form action="/examples/actions/confirmation.php" method="post">
+                  				<div class="modal-header">
+                  					<h4 class="modal-title">Login</h4>
+                  					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  				</div>
+                  				<div class="modal-body">
+                  					<div class="form-group">
+                  						<label>Username</label>
+                  						<input type="text" class="form-control" required="required">
+                  					</div>
+                  					<div class="form-group">
+                  						<div class="clearfix">
+                  							<label>Password</label>
+                  							<a href="#" class="pull-right text-muted"><small>Forgot?</small></a>
+                  						</div>
+
+                  						<input type="password" class="form-control" required="required">
+                  					</div>
+                  				</div>
+                  				<div class="modal-footer">
+                  					<label class="checkbox-inline pull-left"><input type="checkbox"> Remember me</label>
+                  					<input type="submit" class="btn btn-primary pull-right" value="Login">
+                  				</div>
+                  			</form>
+                  		</div>
+                  	</div>
+                  </div>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </section>
+    <section id="body" class="">
+      <div class="container-fluid mt-5 px-sm-2 position-fixed">
+        <div id="search-bar" class="">
+          <div id="search" class="col-12-12">
+            <form id="search-form" action="/search" class="mx-auto">
+              <div id="form" class="">
+                <div id="input"><input type="text" class="text-black" id="search-text" value="" class="bg-secondary text-white" placeholder="Search Products..."></div>
+                <button type="submit" id="search-btn" class="btn btn-default bg-light">
+                  <i class="fas fa-search" aria-hidden="true"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <footer class="bg-light d-flex flex-column justify-content-around">
+        <div>
+          <div id="contact" class="row">
+            <ul id="icons" class="col-xs-3 row mx-auto mt-3 pl-0 mb-0">
+              <li class="col-xs-3 px-sm-2">
+                <a href="https://twitter.com" target="_blank" class="fab fa-twitter fa-lg">
+                </a>
+              </li>
+              <li class="col-xs-3 px-sm-2">
+                <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-square fa-lg text-dark">
+                </a>
+              </li>
+              <li class="col-xs-3 px-sm-2">
+                <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin text-dark fa-lg">
+                </a>
+              </li>
+              <li class="col-xs-3 px-sm-2">
+                <a class="far fa-envelope popup fa-lg text-danger" onclick="">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <p class="col-xs-12 mx-auto">All rights Reserved.</p>
+          </div>
+        </div>
+        <div class="" id="terms">
+          <ul id="footer-nav" class="container-fluid d-flex align-items-end mb-2">
+            <li class="px-sm-2">
+              <a id="privacy-link" class="text-secondary" href="#">Privacy</a>
+            </li>
+            <li class="px-sm-2">
+              <a id="terms-link" class="text-secondary" href="#">Terms</a>
+            </li>
+            <li class="dropup px-sm-2">
+              <a id="help-link" class="text-secondary dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help</a>
+              <div id="footer-menu" class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

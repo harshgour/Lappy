@@ -1,0 +1,50 @@
+.left{
+  left: -350px;
+}
+.header-row {
+    position: relative;
+    padding: 35px 0;
+  }
+  .table-container .col-table-cell {
+      display: table-cell;
+      vertical-align: middle;
+      float: none;
+  }
+  media (min-width: 992px)
+.col-md-3 {
+    width: 25%;
+}
+.inner{
+  padding:0;
+  }
+.heading{
+  text-decoration: none;
+  font-size: 14px;
+  height: 32px;
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  background: none;
+  border: none;
+}
+.cart-icon::before{
+  clear: both;
+  content: ' ';
+  display: block;
+  width: 14px;
+  height: 19px;
+  top: -8px;
+  left: 3px;
+  border: 2px solid #3e7cb4;
+  border-radius: 50%;
+  border-bottom: none;
+  position: absolute;
+}
+.cart-icon{
+  width: 20px;
+  height: 16px;
+  background: #3e7cb4;
+  position: relative;
+  margin-right: 5px;
+  margin-top: 8px;
+}
